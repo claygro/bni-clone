@@ -15,13 +15,15 @@ const HeroSection = () => {
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 flex items-end justify-end right-20 bottom-6 p-6 md:p-10">
-        <button className="bg-[#CF202E] text-white text-xl font-bold py-4 px-32  rounded-xl hover:bg-red-700 transition-colors uppercase tracking-wider">
+      <div className="absolute right-[5px] bottom-[8%]  inset-0 flex flex-col items-end justify-end p-4  sm:px-32 md:p-10">
+        {/* ✅ Add new elements here — they'll stack above the button */}
+        {/* <p className="text-white text-lg mb-4">Some new element</p> */}
+
+        <button className="bg-[#CF202E] text-white text-base md:text-xl font-bold py-3 md:py-4 px-10 sm:px-16 md:px-32 rounded-xl hover:bg-red-700 transition-colors uppercase tracking-wider">
           GET INVITED
         </button>
       </div>
-
-      <h1 className="absolute top-6 left-6 text-white text-2xl">hello</h1>
+      <h1>hello world</h1>
     </div>
   );
 };

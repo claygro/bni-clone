@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import Success from "./components/Success";
 import Testimonial from "./components/Testimonial";
 import Footer1 from "./components/Footer1";
+import Footer2 from "./components/Footer2";
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
       <Testimonial />
       <Success />
       <Footer1 />
+      <Footer2 />
     </>
   );
 }

@@ -79,16 +79,15 @@ function Footer1() {
               Sign up for exclusive networking tips and more.
             </p>
 
-            <section className="flex items-center justify-between bg-white rounded-full overflow-hidden">
+            <section className="flex items-center justify-between bg-white rounded-full  ">
+              <input
+                type="email"
+                placeholder="Email"
+                className=" px-4 py-2 w-full text-black outline-none"
+              />
+
               <div>
-                <input
-                  type="email"
-                  placeholder="Email"
-                  className=" px-4 py-2 text-black outline-none"
-                />
-              </div>
-              <div>
-                <button className="bg-red-600 hover:bg-red-700 px-4 py-2 rounded-full m-1">
+                <button className="bg-red-600 hover:bg-red-700 px-4 py-2 rounded-full ">
                   <ArrowRight className="text-white" />
                 </button>
               </div>

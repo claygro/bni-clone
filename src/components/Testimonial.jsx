@@ -1,7 +1,7 @@
 import { useState } from "react";
 import collaborateImage from "../assets/collaborate.jpg";
 import person from "../assets/person.jpg";
-function ThoughtSection() {
+function Testimonial() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const data = [
@@ -79,7 +79,7 @@ function ThoughtSection() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 w-full max-w-[1200px] flex-1 items-center content-center">
             {/* Left section - Text */}
             <div className="text-white animate-[slideInLeft_0.5s_ease-in-out]">
-              <div className="inline-block bg-[rgba(220,53,69,0.9)] text-white px-4 py-2 rounded text-sm font-semibold mb-4">
+              <div className="inline-block bg-red-500 text-white px-4 py-2 rounded text-sm font-semibold mb-4">
                 {currentItem.title}
               </div>
 
@@ -158,4 +158,4 @@ function ThoughtSection() {
   );
 }
 
-export default ThoughtSection;
+export default Testimonial;

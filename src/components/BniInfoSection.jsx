@@ -70,7 +70,7 @@ const BNIInfoSection = () => {
             {/* Outer grey background grid */}
             <div className="shadow-lg rounded-2xl grid grid-cols-2 gap-[2px] overflow-hidden">
               {/* Top-left: Global Members */}
-              <div className="bg-white rounded-tl-2xl p-12 sm:p-21  flex flex-col items-center text-center">
+              <div className="bg-white rounded-tl-2xl p-12 sm:p-21   flex flex-col items-center text-center">
                 <span className="text-[#CF202E] font-bold text-2xl sm:text-3xl md:text-4xl xl:text-5xl">
                   355K+
                 </span>

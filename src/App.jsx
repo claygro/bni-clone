@@ -1,6 +1,7 @@
 import BNIInfoSection from "./components/BniInfoSection";
 import HeroSection from "./components/HeroSection";
 import NavBar from "./components/NavBar";
+import ThoughtSection from "./components/ThoughtSection";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <NavBar />
       <HeroSection />
       <BNIInfoSection />
+      <ThoughtSection />
     </>
   );
 }

@@ -109,7 +109,7 @@ const Success = () => {
 
         {/* ================= TESTIMONIAL CAROUSEL ================= */}
         <div className="mt-14  overflow-hidden relative">
-          <div className="flex w-max gap-6 animate-scroll-left">
+          <section className="flex w-max gap-6 animate-scroll-left">
             {[...testimonials, ...testimonials].map((item, i) => (
               <div
                 key={i}
@@ -140,7 +140,40 @@ const Success = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </section>
+          {/* another carousel */}
+          <section className="flex w-max gap-6 animate-scroll-right">
+            {[...testimonials, ...testimonials].map((item, i) => (
+              <div
+                key={i}
+                className="w-[340px] sm:w-[380px] flex-shrink-0 
+                bg-black/40 backdrop-blur-md 
+                border border-white/10 
+                text-white rounded-2xl p-6 shadow-xl"
+              >
+                {/* text */}
+                <p className="text-sm sm:text-base leading-relaxed text-white/90">
+                  {item.text}
+                </p>
+
+                {/* user */}
+                <div className="mt-6 flex items-center gap-3 border-t border-white/20 pt-4">
+                  <div className="w-11 h-11 rounded-full bg-white/20">
+                    <img
+                      src={item.img}
+                      alt={item.name}
+                      className="object-cover h-full w-full rounded-full"
+                    />
+                  </div>
+
+                  <div>
+                    <p className="text-sm font-bold">{item.name}</p>
+                    <p className="text-xs text-white/70">{item.role}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </section>
         </div>
       </div>
 
@@ -159,7 +192,23 @@ const Success = () => {
           animation: scroll-left 25s linear infinite;
         }
 
-        .animate-scroll-left:hover {
+        .animate-scroll-right:hover {
+          animation-play-state: paused;
+        }
+            @keyframes scroll-right {
+          0% {
+            transform: translateX(-50%);
+          }
+          100% {
+            transform: translateX(0);
+          }
+        }
+
+        .animate-scroll-right {
+          animation: scroll-right 25s linear infinite;
+        }
+
+        .animate-scroll-right:hover {
           animation-play-state: paused;
         }
       `}</style>

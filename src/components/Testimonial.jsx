@@ -1,6 +1,7 @@
 import { useState } from "react";
 import collaborateImage from "../assets/collaborate.jpg";
 import person from "../assets/person.jpg";
+import krishnaMit from "../assets/krishnamit.png";
 function Testimonial() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -11,8 +12,8 @@ function Testimonial() {
       heading: "Become a Master Connector",
       description:
         "Grow to the Master Connector level, where you actively help your BNI Chapter to thrive and increase revenue for each Member.",
-      image: person,
-      name: "John Smith",
+      image: krishnaMit,
+      name: "Krishna MIT",
       position: "Business Development | USA",
       testimonial:
         "I used to struggle to get trusted logistic partners in other countries. Since I joined BNI, I get credible and trusted partners in just an hour after asking.",

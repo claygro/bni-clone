@@ -142,7 +142,8 @@ const Success = () => {
             ))}
           </section>
           {/* another carousel */}
-          <section className="flex w-max gap-6 animate-scroll-right">
+         
+          <section className="flex mt-12 w-max gap-6 animate-scroll-right">
             {[...testimonials, ...testimonials].map((item, i) => (
               <div
                 key={i}
